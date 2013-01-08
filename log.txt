@@ -1,0 +1,56 @@
+01-08 20:05:58.572: D/dalvikvm(274): GC_EXTERNAL_ALLOC freed 785 objects / 56824 bytes in 74ms
+01-08 20:05:59.472: D/dalvikvm(274): GC_EXTERNAL_ALLOC freed 238 objects / 11144 bytes in 42ms
+01-08 20:05:59.692: E/dalvikvm-heap(274): 17842200-byte external allocation too large for this process.
+01-08 20:05:59.692: E/GraphicsJNI(274): VM won't let us allocate 17842200 bytes
+01-08 20:05:59.692: D/AndroidRuntime(274): Shutting down VM
+01-08 20:05:59.692: W/dalvikvm(274): threadid=1: thread exiting with uncaught exception (group=0x4001d800)
+01-08 20:05:59.712: E/AndroidRuntime(274): FATAL EXCEPTION: main
+01-08 20:05:59.712: E/AndroidRuntime(274): java.lang.RuntimeException: Unable to start activity ComponentInfo{com.example.scc230/com.example.scc230.Feedback_GUI}: android.view.InflateException: Binary XML file line #98: Error inflating class <unknown>
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2663)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2679)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at android.app.ActivityThread.access$2300(ActivityThread.java:125)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2033)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at android.os.Looper.loop(Looper.java:123)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at android.app.ActivityThread.main(ActivityThread.java:4627)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at java.lang.reflect.Method.invokeNative(Native Method)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at java.lang.reflect.Method.invoke(Method.java:521)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:868)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:626)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at dalvik.system.NativeStart.main(Native Method)
+01-08 20:05:59.712: E/AndroidRuntime(274): Caused by: android.view.InflateException: Binary XML file line #98: Error inflating class <unknown>
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at android.view.LayoutInflater.createView(LayoutInflater.java:513)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at com.android.internal.policy.impl.PhoneLayoutInflater.onCreateView(PhoneLayoutInflater.java:56)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:563)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:618)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:621)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:621)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at android.view.LayoutInflater.inflate(LayoutInflater.java:407)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at android.view.LayoutInflater.inflate(LayoutInflater.java:320)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at android.view.LayoutInflater.inflate(LayoutInflater.java:276)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at com.android.internal.policy.impl.PhoneWindow.setContentView(PhoneWindow.java:198)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at android.app.Activity.setContentView(Activity.java:1647)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at com.example.scc230.Feedback_GUI.onCreate(Feedback_GUI.java:12)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2627)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	... 11 more
+01-08 20:05:59.712: E/AndroidRuntime(274): Caused by: java.lang.reflect.InvocationTargetException
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at android.widget.ImageView.<init>(ImageView.java:108)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at java.lang.reflect.Constructor.constructNative(Native Method)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at java.lang.reflect.Constructor.newInstance(Constructor.java:446)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at android.view.LayoutInflater.createView(LayoutInflater.java:500)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	... 24 more
+01-08 20:05:59.712: E/AndroidRuntime(274): Caused by: java.lang.OutOfMemoryError: bitmap size exceeds VM budget
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at android.graphics.Bitmap.nativeCreate(Native Method)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at android.graphics.Bitmap.createBitmap(Bitmap.java:468)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at android.graphics.Bitmap.createBitmap(Bitmap.java:435)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at android.graphics.Bitmap.createScaledBitmap(Bitmap.java:340)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at android.graphics.BitmapFactory.finishDecode(BitmapFactory.java:488)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:462)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at android.graphics.BitmapFactory.decodeResourceStream(BitmapFactory.java:323)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at android.graphics.drawable.Drawable.createFromResourceStream(Drawable.java:697)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at android.content.res.Resources.loadDrawable(Resources.java:1709)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at android.content.res.TypedArray.getDrawable(TypedArray.java:601)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	at android.widget.ImageView.<init>(ImageView.java:118)
+01-08 20:05:59.712: E/AndroidRuntime(274): 	... 28 more
+01-08 20:06:05.903: I/Process(274): Sending signal. PID: 274 SIG: 9
