@@ -5,6 +5,8 @@ import android.app.Activity;
 import android.view.Menu;
 
 public class Lecturer_Reply_GUI extends Activity {
+	
+	int applicationState = 6;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

@@ -5,6 +5,8 @@ import android.app.Activity;
 import android.view.Menu;
 
 public class Notifications_GUI extends Activity {
+	
+	int applicationState = 5;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

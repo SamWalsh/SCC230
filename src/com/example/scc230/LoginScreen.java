@@ -5,6 +5,8 @@ import android.app.Activity;
 import android.view.Menu;
 
 public class LoginScreen extends Activity {
+	
+	int applicationState = 1;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

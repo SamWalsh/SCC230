@@ -6,6 +6,8 @@ import android.view.Menu;
 
 public class Feedback_GUI extends Activity {
 
+	int applicationState = 3;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

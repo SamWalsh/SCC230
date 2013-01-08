@@ -6,6 +6,8 @@ import android.view.Menu;
 
 public class Timetable_GUI extends Activity {
 
+	int applicationState = 2;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
