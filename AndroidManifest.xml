@@ -22,6 +22,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.scc230.Timetable_GUI"
+            android:label="@string/title_activity_timetable__gui" >
+        </activity>
+        <activity
+            android:name="com.example.scc230.LoginScreen"
+            android:label="@string/title_activity_login_screen" >
+        </activity>
+        <activity
+            android:name="com.example.scc230.Lecturer_Reply_GUI"
+            android:label="@string/title_activity_lecturer__reply__gui" >
+        </activity>
+        <activity
+            android:name="com.example.scc230.Notifications_GUI"
+            android:label="@string/title_activity_notifications__gui" >
+        </activity>
     </application>
 
 </manifest>

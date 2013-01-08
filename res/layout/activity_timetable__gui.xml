@@ -1,0 +1,327 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Timetable_GUI" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitStart"
+                android:src="@drawable/topbar" />
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="43dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/home"
+                android:maxHeight="50dp"
+                android:maxWidth="50dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/home" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageButton1"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="43dp"
+                android:layout_toRightOf="@+id/imageButton1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/spanner"
+                android:maxHeight="50dp"
+                android:maxWidth="50dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/spanner" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageButton2"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="23dp"
+                android:layout_toRightOf="@+id/imageButton2"
+                android:adjustViewBounds="true"
+                android:background="@drawable/notifications"
+                android:maxHeight="50dp"
+                android:maxWidth="50dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/notifications" />
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageButton3"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/imageButton3"
+                android:adjustViewBounds="true"
+                android:background="@drawable/back"
+                android:maxHeight="50dp"
+                android:maxWidth="50dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/back" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageButton1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:adjustViewBounds="true"
+                android:maxHeight="70dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/thingreybox" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="6dp"
+                android:text="Week 11"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="19dp"
+                android:adjustViewBounds="true"
+                android:maxWidth="305dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/redandgrey" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_alignTop="@+id/imageView3"
+                android:layout_marginLeft="10dp"
+                android:maxLines="1"
+                android:paddingLeft="3dp"
+                android:text="Monday 14/1/2013"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:adjustViewBounds="true"
+                android:maxWidth="305dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/redandgrey" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignTop="@+id/ImageView01"
+                android:maxLines="1"
+                android:paddingLeft="3dp"
+                android:text="Tuesday 15/1/2013"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textSize="13sp" />
+
+            <requestFocus />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/ImageView01"
+                android:layout_alignLeft="@+id/editText1"
+                android:layout_alignRight="@+id/editText1"
+                android:ems="10"
+                android:text="Time: 13:00-14:00"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/ImageView01"
+                android:layout_alignLeft="@+id/imageButton3"
+                android:layout_alignRight="@+id/imageView3"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:text="Module SCC212, Lecture Theatre: George Fox LT1"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/editText3"
+                android:layout_alignLeft="@+id/editText3"
+                android:layout_alignRight="@+id/imageView3"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:text="Module SCC201, Lecture Theatre: Cavendish LT"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/editText7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/editText6"
+                android:layout_alignRight="@+id/editText3"
+                android:layout_toRightOf="@+id/textView2"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:text="Module SCC211, Lecture Theatre: Mngt School LT 08"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/editText8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ImageView01"
+                android:layout_alignRight="@+id/editText7"
+                android:layout_toRightOf="@+id/textView2"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:text="Module SCC230, Lecture Theatre: Engineering B076"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/ImageView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/editText8"
+                android:adjustViewBounds="true"
+                android:maxWidth="305dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/redandgrey" />
+
+            <EditText
+                android:id="@+id/editText9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/editText6"
+                android:layout_alignRight="@+id/editText6"
+                android:layout_below="@+id/ImageView01"
+                android:layout_marginTop="26dp"
+                android:ems="10"
+                android:text="Time: 10:00-11:00"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/editText10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/editText9"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/editText9"
+                android:ems="10"
+                android:text="Time: 9:00-11:00"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/editText11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/editText8"
+                android:layout_alignRight="@+id/ImageView01"
+                android:layout_alignTop="@+id/editText9"
+                android:ems="10"
+                android:text="Module SCC202, Lecture Theatre: Elizabeth L&apos;ston LT"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/editText12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/editText11"
+                android:layout_toRightOf="@+id/textView2"
+                android:ems="10"
+                android:text="Module SCC205, Lecture Theatre: County South A70"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/editText2"
+                android:layout_toLeftOf="@+id/imageButton3"
+                android:ems="10"
+                android:text="Time: 9:00-11:00"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/editText11"
+                android:layout_alignLeft="@+id/ImageView01"
+                android:maxLines="1"
+                android:paddingLeft="3dp"
+                android:text="Wednesday 16/1/2013"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/editText9"
+                android:layout_alignRight="@+id/textView2"
+                android:ems="10"
+                android:text="Time: 15:00-17:00"
+                android:textSize="10sp" />
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/editText6"
+                android:layout_below="@+id/TextView02"
+                android:ems="10"
+                android:text="Time: 12:00-14:00"
+                android:textSize="10sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,233 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    tools:context=".Lecturer_Reply_GUI" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="top" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitStart"
+                android:src="@drawable/topbar" />
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="43dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/home"
+                android:maxHeight="50dp"
+                android:maxWidth="50dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/home" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageButton1"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="43dp"
+                android:layout_toRightOf="@+id/imageButton1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/spanner"
+                android:maxHeight="50dp"
+                android:maxWidth="50dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/spanner" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageButton2"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="23dp"
+                android:layout_toRightOf="@+id/imageButton2"
+                android:adjustViewBounds="true"
+                android:background="@drawable/notifications"
+                android:maxHeight="50dp"
+                android:maxWidth="50dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/notifications" />
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageButton3"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/imageButton3"
+                android:adjustViewBounds="true"
+                android:background="@drawable/back"
+                android:maxHeight="50dp"
+                android:maxWidth="50dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/back" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageButton1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:adjustViewBounds="true"
+                android:maxHeight="70dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/thingreybox" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="19dp"
+                android:adjustViewBounds="true"
+                android:maxWidth="305dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/redandgrey" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView3"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
+                android:adjustViewBounds="true"
+                android:baselineAlignBottom="false"
+                android:cropToPadding="false"
+                android:maxHeight="300dp"
+                android:maxWidth="290dp"
+                android:paddingTop="1dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/white" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_alignTop="@+id/imageView3"
+                android:layout_marginLeft="10dp"
+                android:maxLines="1"
+                android:paddingLeft="3dp"
+                android:text="Lecture: name, date"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:adjustViewBounds="true"
+                android:maxWidth="305dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/redandgrey" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ImageView01"
+                android:layout_below="@+id/TextView02"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
+                android:adjustViewBounds="true"
+                android:baselineAlignBottom="false"
+                android:cropToPadding="false"
+                android:maxHeight="300dp"
+                android:maxWidth="290dp"
+                android:paddingTop="1dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/white" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignTop="@+id/ImageView01"
+                android:maxLines="1"
+                android:paddingLeft="3dp"
+                android:text="Reply to comment"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textSize="13sp" />
+
+            <!-- BOTTOM BOX -->
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageView4"
+                android:layout_alignRight="@+id/imageView4"
+                android:layout_alignTop="@+id/imageView4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="14dp"
+                android:text="Student comment: Scroll down box of student comments from a particular lecture"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ImageView01"
+                android:layout_alignLeft="@+id/imageView5"
+                android:layout_alignRight="@+id/ImageView01"
+                android:layout_alignTop="@+id/imageView5"
+                android:layout_centerHorizontal="true"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:text="Reply box" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignLeft="@+id/imageView4"
+                android:layout_alignTop="@+id/imageView2"
+                android:text="Respond to students"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>
