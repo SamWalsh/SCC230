@@ -1,6 +1,6 @@
 NexusOne emulator
 
-Status: Currently crashing on emulator
+Status: Working
 
 Feedback_GUI 		- Ryan
 Lecturer_Reply_GUI 	- Sam
