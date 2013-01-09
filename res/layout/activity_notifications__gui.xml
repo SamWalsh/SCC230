@@ -14,7 +14,7 @@
 
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="551dp"
             android:gravity="top" >
 
             <ImageView
@@ -57,7 +57,7 @@
                 android:src="@drawable/spanner" />
 
             <ImageButton
-                android:id="@+id/imageButton3"
+                android:id="@+id/imageButtonNotifications"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignBottom="@+id/imageButton2"
@@ -75,9 +75,9 @@
                 android:id="@+id/imageButton4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/imageButton3"
+                android:layout_alignTop="@+id/imageButtonNotifications"
                 android:layout_marginLeft="7dp"
-                android:layout_toRightOf="@+id/imageButton3"
+                android:layout_toRightOf="@+id/imageButtonNotifications"
                 android:adjustViewBounds="true"
                 android:background="@drawable/back"
                 android:maxHeight="50dp"
@@ -107,7 +107,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginLeft="1dp"
                 android:layout_marginTop="6dp"
-                android:text="(Java needed to get information from LT selected)"
+                android:text="Notifications"
                 android:textSize="13sp" />
 
             <ImageView
@@ -140,8 +140,6 @@
                 android:paddingTop="1dp"
                 android:scaleType="fitStart"
                 android:src="@drawable/white" />
-            
-            
 
             <TextView
                 android:id="@+id/textView2"
@@ -169,23 +167,15 @@
                 android:scaleType="fitStart"
                 android:src="@drawable/redandgrey" />
 
-            <ImageView
-                android:id="@+id/imageView5"
+            <TextView
+                android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/ImageView01"
-                android:layout_below="@+id/TextView02"
-                android:layout_centerHorizontal="true"
-                android:layout_marginLeft="3dp"
-                android:layout_marginTop="5dp"
-                android:adjustViewBounds="true"
-                android:baselineAlignBottom="false"
-                android:cropToPadding="false"
-                android:maxHeight="300dp"
-                android:maxWidth="290dp"
-                android:paddingTop="1dp"
-                android:scaleType="fitStart"
-                android:src="@drawable/white" />
+                android:layout_alignLeft="@+id/imageView4"
+                android:layout_alignTop="@+id/imageView4"
+                android:layout_marginLeft="14dp"
+                android:text="Lecture name, date, time"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
 
             <TextView
                 android:id="@+id/TextView02"
@@ -200,31 +190,13 @@
                 android:textColorHint="@android:color/white"
                 android:textSize="13sp" />
 
-            <!-- BOTTOM BOX -->
-
             <ImageView
-                android:id="@+id/imageView6"
+                android:id="@+id/imageView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_below="@+id/imageView3"
+                android:layout_alignBottom="@+id/ImageView01"
+                android:layout_below="@+id/TextView02"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="16dp"
-                android:adjustViewBounds="true"
-                android:maxWidth="305dp"
-                android:scaleType="fitStart"
-                android:src="@drawable/redandgrey" />
-
-            <ImageView
-                android:id="@+id/imageView7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/imageView6"
-                android:layout_alignParentBottom="true"
-                android:layout_below="@+id/TextView03"
-                android:layout_centerHorizontal="true"
-                android:layout_marginLeft="3dp"
-                android:layout_marginTop="5dp"
                 android:adjustViewBounds="true"
                 android:baselineAlignBottom="false"
                 android:cropToPadding="false"
@@ -234,28 +206,31 @@
                 android:scaleType="fitStart"
                 android:src="@drawable/white" />
 
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:layout_alignTop="@+id/TextView03"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:maxWidth="305dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/redandgrey" />
+
             <TextView
                 android:id="@+id/TextView03"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/imageButton4"
-                android:layout_alignTop="@+id/imageView6"
+                android:layout_alignLeft="@+id/TextView02"
+                android:layout_below="@+id/ImageView01"
+                android:layout_marginTop="21dp"
                 android:maxLines="1"
                 android:paddingLeft="3dp"
                 android:text="Other notifications"
                 android:textColor="@android:color/white"
                 android:textColorHint="@android:color/white"
                 android:textSize="13sp" />
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/imageView4"
-                android:layout_alignTop="@+id/imageView4"
-                android:layout_marginLeft="14dp"
-                android:text="Lecture name, date, time"
-                android:textAppearance="?android:attr/textAppearanceSmall" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -266,7 +241,33 @@
                 android:text="Lecture comment, date, time"
                 android:textAppearance="?android:attr/textAppearanceSmall" />
 
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView6"
+                android:layout_below="@+id/TextView03"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:baselineAlignBottom="false"
+                android:cropToPadding="false"
+                android:maxHeight="300dp"
+                android:maxWidth="290dp"
+                android:paddingTop="1dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/white" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView4"
+                android:layout_alignTop="@+id/imageView7"
+                android:text="Lecture comment, date, time"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
         </RelativeLayout>
+
     </LinearLayout>
 
 </ScrollView>

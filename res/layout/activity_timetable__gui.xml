@@ -13,8 +13,9 @@
         android:orientation="vertical" >
 
         <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="505dp"
             android:gravity="top" >
 
             <ImageView
@@ -27,7 +28,7 @@
                 android:src="@drawable/topbar" />
 
             <ImageButton
-                android:id="@+id/imageButton1"
+                android:id="@+id/imageButtonHome"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -45,10 +46,10 @@
                 android:id="@+id/imageButton2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/imageButton1"
+                android:layout_alignBottom="@+id/imageButtonHome"
                 android:layout_marginLeft="6dp"
                 android:layout_marginTop="43dp"
-                android:layout_toRightOf="@+id/imageButton1"
+                android:layout_toRightOf="@+id/imageButtonHome"
                 android:adjustViewBounds="true"
                 android:background="@drawable/spanner"
                 android:maxHeight="50dp"
@@ -89,7 +90,7 @@
                 android:id="@+id/imageView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/imageButton1"
+                android:layout_below="@+id/imageButtonHome"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="15dp"
                 android:adjustViewBounds="true"

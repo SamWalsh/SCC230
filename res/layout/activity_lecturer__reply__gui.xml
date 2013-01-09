@@ -57,7 +57,7 @@
                 android:src="@drawable/spanner" />
 
             <ImageButton
-                android:id="@+id/imageButton3"
+                android:id="@+id/imageButtonNotifications"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignBottom="@+id/imageButton2"
@@ -75,9 +75,9 @@
                 android:id="@+id/imageButton4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/imageButton3"
+                android:layout_alignTop="@+id/imageButtonNotifications"
                 android:layout_marginLeft="7dp"
-                android:layout_toRightOf="@+id/imageButton3"
+                android:layout_toRightOf="@+id/imageButtonNotifications"
                 android:adjustViewBounds="true"
                 android:background="@drawable/back"
                 android:maxHeight="50dp"

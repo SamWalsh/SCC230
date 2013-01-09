@@ -1,285 +1,285 @@
-	<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-	    xmlns:tools="http://schemas.android.com/tools"
-	    android:id="@+id/scroll"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:orientation="vertical"
-	   	tools:context=".Feedback_GUI" >
-	
-	    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:orientation="vertical">
-	    
-		    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:gravity="top">
-		
-		        <ImageView
-		            android:id="@+id/imageView1"
-		            android:layout_width="fill_parent"
-		            android:layout_height="match_parent"
-		            android:layout_alignParentRight="true"
-		            android:layout_alignParentTop="true"
-		            android:scaleType="fitStart"
-		            android:src="@drawable/topbar" />
-		
-		        <ImageButton
-		            android:id="@+id/imageButton1"
-		            android:layout_width="wrap_content"
-		            android:layout_height="wrap_content"
-		            android:layout_alignParentLeft="true"
-		            android:layout_alignParentTop="true"
-		            android:layout_marginLeft="5dp"
-		            android:layout_marginTop="43dp"
-		            android:adjustViewBounds="true"
-		            android:background="@drawable/home"
-		            android:maxHeight="50dp"
-		            android:maxWidth="50dp"
-		            android:scaleType="fitCenter"
-		            android:src="@drawable/home" />
-		
-		        <ImageButton
-		            android:id="@+id/imageButton2"
-		            android:layout_width="wrap_content"
-		            android:layout_height="wrap_content"
-		            android:layout_alignBottom="@+id/imageButton1"
-		            android:layout_marginLeft="6dp"
-		            android:layout_marginTop="43dp"
-		            android:layout_toRightOf="@+id/imageButton1"
-		            android:adjustViewBounds="true"
-		            android:background="@drawable/spanner"
-		            android:maxHeight="50dp"
-		            android:maxWidth="50dp"
-		            android:scaleType="fitCenter"
-		            android:src="@drawable/spanner" />
-		
-		        <ImageButton
-		            android:id="@+id/imageButton3"
-		            android:layout_width="wrap_content"
-		            android:layout_height="wrap_content"
-		            android:layout_alignBottom="@+id/imageButton2"
-		            android:layout_marginLeft="6dp"
-		            android:layout_marginTop="23dp"
-		            android:layout_toRightOf="@+id/imageButton2"
-		            android:adjustViewBounds="true"
-		            android:background="@drawable/notifications"
-		            android:maxHeight="50dp"
-		            android:maxWidth="50dp"
-		            android:scaleType="fitCenter"
-		            android:src="@drawable/notifications" />
-		
-		        <ImageView
-		            android:id="@+id/imageView2"
-		            android:layout_width="wrap_content"
-		            android:layout_height="wrap_content"
-		            android:layout_below="@+id/imageButton1"
-		            android:layout_centerHorizontal="true"
-		            android:layout_marginTop="15dp"
-		            android:adjustViewBounds="true"
-		            android:maxHeight="70dp"
-		            android:paddingLeft="5dp"
-		            android:paddingRight="5dp"
-		            android:scaleType="fitStart"
-		            android:src="@drawable/thingreybox" />
-		
-		        <TextView
-		            android:id="@+id/textView1"
-		            android:layout_width="wrap_content"
-		            android:layout_height="wrap_content"
-		            android:layout_alignTop="@+id/imageView2"
-		            android:layout_centerHorizontal="true"
-		            android:layout_marginLeft="1dp"
-		            android:layout_marginTop="6dp"
-		            android:text="(Java needed to get information from LT selected)"
-		            android:textSize="13sp" />
-		
-		        <ImageView
-		            android:id="@+id/imageView3"
-		            android:layout_width="wrap_content"
-		            android:layout_height="wrap_content"
-		            android:layout_below="@+id/imageView2"
-		            android:layout_centerHorizontal="true"
-		            android:layout_marginLeft="5dp"
-		            android:layout_marginTop="19dp"
-		            android:adjustViewBounds="true"
-		            android:maxWidth="305dp"
-		            android:scaleType="fitStart"
-		            android:src="@drawable/redandgrey" />
-		
-		        <ImageView
-		            android:id="@+id/imageView4"
-		            android:layout_width="wrap_content"
-		            android:layout_height="wrap_content"
-		            android:layout_below="@+id/textView2"
-		            android:layout_centerHorizontal="true"
-		            android:layout_marginLeft="3dp"
-		            android:layout_marginTop="5dp"
-		            android:adjustViewBounds="true"
-		            android:baselineAlignBottom="false"
-		            android:cropToPadding="false"
-		            android:maxHeight="300dp"
-		            android:maxWidth="290dp"
-		            android:paddingTop="1dp"
-		            android:scaleType="fitStart"
-		            android:src="@drawable/white" />
-		
-		        <TextView
-		            android:id="@+id/textView2"
-		            android:layout_width="wrap_content"
-		            android:layout_height="wrap_content"
-		            android:layout_alignLeft="@+id/textView1"
-		            android:layout_alignTop="@+id/imageView3"
-		            android:layout_marginLeft="10dp"
-		            android:maxLines="1"
-		            android:paddingLeft="3dp"
-		            android:text="Lecture Description"
-		            android:textColor="@android:color/white"
-		            android:textColorHint="@android:color/white"
-		            android:textSize="13sp" />
-		
-		        <TextView
-		            android:id="@+id/TextView01"
-		            android:layout_width="wrap_content"
-		            android:layout_height="wrap_content"
-		            android:layout_alignBottom="@+id/imageView4"
-		            android:layout_alignLeft="@+id/imageView4"
-		            android:layout_alignRight="@+id/imageView4"
-		            android:layout_alignTop="@+id/imageView4"
-		            android:layout_marginLeft="10dp"
-		            android:maxLines="4"
-		            android:padding="5dp"
-		            android:text="Again, Java needed get Lecture description from lectuerers input/if no input display &quot;no description&quot; (or something similar)"
-		            android:textSize="13sp" />
-		
-		        <ImageView
-		            android:id="@+id/ImageView01"
-		            android:layout_width="wrap_content"
-		            android:layout_height="wrap_content"
-		            android:layout_below="@+id/imageView3"
-		            android:layout_centerHorizontal="true"
-		            android:layout_marginTop="16dp"
-		            android:adjustViewBounds="true"
-		            android:maxWidth="305dp"
-		            android:scaleType="fitStart"
-		            android:src="@drawable/redandgrey" />
-		
-		        <TextView
-		            android:id="@+id/TextView02"
-		            android:layout_width="wrap_content"
-		            android:layout_height="wrap_content"
-		            android:layout_alignLeft="@+id/textView2"
-		            android:layout_alignTop="@+id/ImageView01"
-		            android:maxLines="1"
-		            android:paddingLeft="3dp"
-		            android:text="Rate Lecture"
-		            android:textColor="@android:color/white"
-		            android:textColorHint="@android:color/white"
-		            android:textSize="13sp" />
-		
-		        <RatingBar
-		            android:id="@+id/ratingBar1"
-		            android:layout_width="wrap_content"
-		            android:layout_height="wrap_content"
-		            android:layout_alignLeft="@+id/ImageView01"
-		            android:layout_below="@+id/TextView02"
-		            android:layout_marginLeft="10dp"
-		            android:isIndicator="false"
-		            android:max="5"
-		            android:numStars="5"
-		            android:paddingTop="5dp"
-		            android:stepSize="0.5" />
-		
-		        <CheckBox
-		            android:id="@+id/checkBox1"
-		            android:layout_width="wrap_content"
-		            android:layout_height="wrap_content"
-		            android:layout_alignBottom="@+id/ImageView01"
-		            android:layout_alignRight="@+id/ImageView01" />
-		
-		        <ImageView
-		            android:id="@+id/imageView5"
-		            android:layout_width="wrap_content"
-		            android:layout_height="wrap_content"
-		            android:layout_alignParentTop="true"
-		            android:layout_centerHorizontal="true"
-		            android:layout_marginTop="390dp"
-		            android:adjustViewBounds="true"
-		            android:maxWidth="305dp"
-		            android:src="@drawable/comment" />
-		
-		        <EditText
-		            android:id="@+id/editText1"
-		            android:layout_width="wrap_content"
-		            android:layout_height="wrap_content"
-		            android:layout_alignLeft="@+id/imageView4"
-		            android:layout_alignTop="@+id/imageView5"
-		            android:layout_marginLeft="11dp"
-		            android:layout_marginTop="26dp"
-		            android:ems="10"
-		            android:height="100dp"
-		            android:inputType="textMultiLine" />
-		
-		        <CheckBox
-		            android:id="@+id/CheckBox01"
-		            android:layout_width="wrap_content"
-		            android:layout_height="wrap_content"
-		            android:layout_alignBottom="@+id/editText1"
-		            android:layout_alignRight="@+id/TextView01" />
-		
-		        <TextView
-		            android:id="@+id/TextView03"
-		            android:layout_width="wrap_content"
-		            android:layout_height="wrap_content"
-		            android:layout_alignRight="@+id/textView1"
-		            android:layout_below="@+id/editText1"
-		            android:layout_marginTop="28dp"
-		            android:layout_toRightOf="@+id/TextView02"
-		            android:maxLines="4"
-		            android:padding="5dp"
-		            android:text="Again, Java needed diplay comment replies from other user or no new comment if no one has replied"
-		            android:textSize="13sp" />
-		
-		        <TextView
-		            android:id="@+id/TextView04"
-		            android:layout_width="wrap_content"
-		            android:layout_height="wrap_content"
-		            android:layout_alignRight="@+id/CheckBox01"
-		            android:layout_below="@+id/TextView03"
-		            android:layout_marginTop="41dp"
-		            android:layout_toRightOf="@+id/TextView02"
-		            android:maxLines="4"
-		            android:padding="5dp"
-		            android:text="Again, Java needed diplay comment replies from other user or no new comment if no one has replied"
-		            android:textSize="13sp" />
-		
-		        <ImageButton
-		            android:id="@+id/imageButton4"
-		            android:layout_width="wrap_content"
-		            android:layout_height="wrap_content"
-		            android:layout_alignTop="@+id/imageButton3"
-		            android:layout_marginLeft="7dp"
-		            android:layout_toRightOf="@+id/imageButton3"
-		            android:adjustViewBounds="true"
-		            android:background="@drawable/back"
-		            android:maxHeight="50dp"
-		            android:maxWidth="50dp"
-		            android:scaleType="fitCenter"
-		            android:src="@drawable/back" />
-		
-		        <ImageView
-		            android:id="@+id/imageView6"
-		            android:layout_width="wrap_content"
-		            android:layout_height="wrap_content"
-		            android:layout_above="@+id/CheckBox01"
-		            android:layout_alignLeft="@+id/checkBox1"
-		            android:layout_alignRight="@+id/CheckBox01"
-		            android:layout_marginRight="10dp"
-		            android:src="@drawable/picture" />
-		
-		    </RelativeLayout>
-	
-		</LinearLayout>
-		
-	</ScrollView>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Feedback_GUI" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitStart"
+                android:src="@drawable/topbar" />
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="43dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/home"
+                android:maxHeight="50dp"
+                android:maxWidth="50dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/home" />
+
+            <ImageButton
+                android:id="@+id/imageButtonSpanner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageButton1"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="43dp"
+                android:layout_toRightOf="@+id/imageButton1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/spanner"
+                android:maxHeight="50dp"
+                android:maxWidth="50dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/spanner" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageButtonSpanner"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="23dp"
+                android:layout_toRightOf="@+id/imageButtonSpanner"
+                android:adjustViewBounds="true"
+                android:background="@drawable/notifications"
+                android:maxHeight="50dp"
+                android:maxWidth="50dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/notifications" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageButton1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:adjustViewBounds="true"
+                android:maxHeight="70dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/thingreybox" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="6dp"
+                android:text="(Java needed to get information from LT selected)"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="19dp"
+                android:adjustViewBounds="true"
+                android:maxWidth="305dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/redandgrey" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
+                android:adjustViewBounds="true"
+                android:baselineAlignBottom="false"
+                android:cropToPadding="false"
+                android:maxHeight="300dp"
+                android:maxWidth="290dp"
+                android:paddingTop="1dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/white" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_alignTop="@+id/imageView3"
+                android:layout_marginLeft="10dp"
+                android:maxLines="1"
+                android:paddingLeft="3dp"
+                android:text="Lecture Description"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView4"
+                android:layout_alignLeft="@+id/imageView4"
+                android:layout_alignRight="@+id/imageView4"
+                android:layout_alignTop="@+id/imageView4"
+                android:layout_marginLeft="10dp"
+                android:maxLines="4"
+                android:padding="5dp"
+                android:text="Again, Java needed get Lecture description from lectuerers input/if no input display &quot;no description&quot; (or something similar)"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:adjustViewBounds="true"
+                android:maxWidth="305dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/redandgrey" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignTop="@+id/ImageView01"
+                android:maxLines="1"
+                android:paddingLeft="3dp"
+                android:text="Rate Lecture"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textSize="13sp" />
+
+            <RatingBar
+                android:id="@+id/ratingBar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ImageView01"
+                android:layout_below="@+id/TextView02"
+                android:layout_marginLeft="10dp"
+                android:isIndicator="false"
+                android:max="5"
+                android:numStars="5"
+                android:paddingTop="5dp"
+                android:stepSize="0.5" />
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ImageView01"
+                android:layout_alignRight="@+id/ImageView01" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="390dp"
+                android:adjustViewBounds="true"
+                android:maxWidth="305dp"
+                android:src="@drawable/comment" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageView4"
+                android:layout_alignTop="@+id/imageView5"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="26dp"
+                android:ems="10"
+                android:height="100dp"
+                android:inputType="textMultiLine" />
+
+            <CheckBox
+                android:id="@+id/CheckBox01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/editText1"
+                android:layout_alignRight="@+id/TextView01" />
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/textView1"
+                android:layout_below="@+id/editText1"
+                android:layout_marginTop="28dp"
+                android:layout_toRightOf="@+id/TextView02"
+                android:maxLines="4"
+                android:padding="5dp"
+                android:text="Again, Java needed diplay comment replies from other user or no new comment if no one has replied"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/CheckBox01"
+                android:layout_below="@+id/TextView03"
+                android:layout_marginTop="41dp"
+                android:layout_toRightOf="@+id/TextView02"
+                android:maxLines="4"
+                android:padding="5dp"
+                android:text="Again, Java needed diplay comment replies from other user or no new comment if no one has replied"
+                android:textSize="13sp" />
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageButton3"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/imageButton3"
+                android:adjustViewBounds="true"
+                android:background="@drawable/back"
+                android:maxHeight="50dp"
+                android:maxWidth="50dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/back" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/CheckBox01"
+                android:layout_alignLeft="@+id/checkBox1"
+                android:layout_alignRight="@+id/CheckBox01"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/picture" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>
