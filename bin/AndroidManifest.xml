@@ -18,6 +18,7 @@
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.FEEDBACK" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -26,6 +27,7 @@
             android:label="@string/title_activity_timetable__gui" >
             <intent-filter>
                 <action android:name="android.intent.action.TIMETABLE" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -34,6 +36,7 @@
             android:label="@string/title_activity_login_screen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -42,6 +45,7 @@
             android:label="@string/title_activity_lecturer__reply__gui" >
             <intent-filter>
                 <action android:name="android.intent.action.LECTURERREPLY" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -50,6 +54,34 @@
             android:label="@string/title_activity_notifications__gui" >
             <intent-filter>
                 <action android:name="android.intent.action.NOTIFICATIONS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.scc230.TimetableTest"
+            android:label="@string/title_activity_timetable_test" >
+            <intent-filter>
+                <action android:name="android.intent.action.TIMETABLETEST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.scc230.TimetableTest2"
+            android:label="@string/title_activity_timetable_test2" >
+            <intent-filter>
+                <action android:name="android.intent.action.TIMETABLETEST2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.scc230.Settings_GUI"
+            android:label="@string/title_activity_settings__gui" >
+            <intent-filter>
+                <action android:name="android.intent.action.SETTINGS" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>

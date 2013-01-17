@@ -10,5 +10,8 @@
     <string name="title_activity_login_screen">LoginScreen</string>
     <string name="title_activity_lecturer__reply__gui">Lecturer_Reply_GUI</string>
     <string name="title_activity_notifications__gui">Notifications_GUI</string>
+    <string name="title_activity_timetable_test">TimetableTest</string>
+    <string name="title_activity_timetable_test2">TimetableTest2</string>
+    <string name="title_activity_settings__gui">Settings_GUI</string>
 
 </resources>

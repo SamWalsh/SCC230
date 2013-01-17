@@ -190,14 +190,13 @@
             <!-- BOTTOM BOX -->
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/textViewComment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/imageView4"
-                android:layout_alignRight="@+id/imageView4"
+                android:layout_alignBottom="@+id/imageView3"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignRight="@+id/editText1"
                 android:layout_alignTop="@+id/imageView4"
-                android:layout_centerHorizontal="true"
-                android:layout_marginLeft="14dp"
                 android:text="Student comment: Scroll down box of student comments from a particular lecture"
                 android:textAppearance="?android:attr/textAppearanceSmall" />
 
@@ -221,12 +220,20 @@
                 android:id="@+id/textView1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
                 android:layout_alignLeft="@+id/imageView4"
                 android:layout_alignTop="@+id/imageView2"
+                android:layout_centerHorizontal="true"
                 android:text="Respond to students"
                 android:textSize="13sp" />
 
+            <Button
+                android:id="@+id/buttonSubmitReply"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/ImageView01"
+                android:text="Submit" />
         </RelativeLayout>
     </LinearLayout>
 

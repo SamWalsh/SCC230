@@ -1,18 +1,22 @@
-NexusOne emulator
+NexusS emulator
+
+Android API 2.2
 
 
-Status: Working
+Status: Partially working
+- Notifications_GUI & Lecturer_Reply_GUI now crash upon clicking them in emulator, possible memory error
 
 
-Feedback_GUI 		- Ryan
+/res/layout/Feedback__GUI.xml 					- Ryan
 
-Lecturer_Reply_GUI 	- Sam
+/res/layout/Lecturer__Reply__GUI.xml 			- Sam
 
-LoginScreen 		- Josh
+/res/layout/LoginScreen.xml 					- Josh
 
-Notifications_GUI	- Sam
+/res/layout/Notifications__GUI.xml				- Sam
 
-Timetable_GUI		- Ant
+/res/layout/Timetable_GUI.xml					- Ant
 
+src/com/example/scc230/all .java files			- Sam
 
-res/drawable - Ryan
+res/drawable/all .png files						- Ryan

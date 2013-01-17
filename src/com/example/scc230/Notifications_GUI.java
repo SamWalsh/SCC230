@@ -8,17 +8,71 @@ import android.view.View;
 import android.widget.ImageButton;
 
 public class Notifications_GUI extends Activity {
-	
+
 	int applicationState = 5;
-	
-	
+
+	ImageButton homeTab;
+	ImageButton settingsTab;
+	ImageButton notificationsTab;
+	ImageButton backTab;
+
+	Intent openLecturerReply = new Intent("android.intent.action.LECTURERREPLY");
+	Intent openTimetable = new Intent("android.intent.action.TIMETABLE");
+	Intent openSettings = new Intent("android.intent.action.SETTINGS");
+	Intent openNotifications = new Intent("android.intent.action.NOTIFICATIONS");
+
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_notifications__gui);
-		
-		
+
+		homeTab = (ImageButton) findViewById(R.id.imageButtonHome);
+		settingsTab = (ImageButton) findViewById(R.id.imageButtonSettings);
+		notificationsTab = (ImageButton) findViewById(R.id.imageButtonNotifications);
+		backTab = (ImageButton) findViewById(R.id.imageButtonBack);
+
+		settingsTab.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				startActivity(openSettings);
+				//setContentView(R.layout.activity_timetable__gui);
+			}
+		});
+
+		homeTab.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				startActivity(openTimetable);
+				//setContentView(R.layout.activity_timetable__gui);
+			}
+		});
+
+		notificationsTab.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				startActivity(openNotifications);
+				//setContentView(R.layout.activity_timetable__gui);
+			}
+		});
+
+		backTab.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				finish();
+			}
+		});
 	}
+
+
+
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
