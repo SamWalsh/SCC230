@@ -2,6 +2,9 @@ NexusS emulator
 
 Android API 2.2
 
+Android installation tutorial: https://www.youtube.com/watch?v=857zrsYZKGo&list=PL2F07DBCDCC01493A
+
+
 
 Status: Partially working
 - Notifications_GUI & Lecturer_Reply_GUI now crash upon clicking them in emulator, possible memory error
