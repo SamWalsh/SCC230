@@ -6,8 +6,8 @@ Android installation tutorial: https://www.youtube.com/watch?v=857zrsYZKGo&list=
 
 
 
-Status: Partially working
-- Notifications_GUI & Lecturer_Reply_GUI now crash upon clicking them in emulator, possible memory error
+Status: Working
+Bugs: None (28/01/2013)
 
 
 /res/layout/Feedback__GUI.xml 					- Ryan
