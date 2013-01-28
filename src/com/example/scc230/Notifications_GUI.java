@@ -15,12 +15,13 @@ public class Notifications_GUI extends Activity {
 	ImageButton settingsTab;
 	ImageButton notificationsTab;
 	ImageButton backTab;
+	
+	
 
 	Intent openLecturerReply = new Intent("android.intent.action.LECTURERREPLY");
 	Intent openTimetable = new Intent("android.intent.action.TIMETABLE");
 	Intent openSettings = new Intent("android.intent.action.SETTINGS");
 	Intent openNotifications = new Intent("android.intent.action.NOTIFICATIONS");
-
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

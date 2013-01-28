@@ -7,12 +7,14 @@
     android:scrollbars="vertical"
     tools:context=".Notifications_GUI" >
 
-    <LinearLayout
+    <LinearLayout 
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="top" >
 
-        <RelativeLayout
+        <RelativeLayout 
+            xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="wrap_content"
             android:layout_height="551dp"
             android:gravity="top" >
@@ -27,7 +29,7 @@
                 android:src="@drawable/topbar" />
 
             <ImageButton
-                android:id="@+id/imageButton1"
+                android:id="@+id/imageButtonHome"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -42,13 +44,13 @@
                 android:src="@drawable/home" />
 
             <ImageButton
-                android:id="@+id/imageButton2"
+                android:id="@+id/imageButtonSettings"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/imageButton1"
+                android:layout_alignBottom="@+id/imageButtonHome"
                 android:layout_marginLeft="6dp"
                 android:layout_marginTop="43dp"
-                android:layout_toRightOf="@+id/imageButton1"
+                android:layout_toRightOf="@+id/imageButtonHome"
                 android:adjustViewBounds="true"
                 android:background="@drawable/spanner"
                 android:maxHeight="50dp"
@@ -60,10 +62,10 @@
                 android:id="@+id/imageButtonNotifications"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/imageButton2"
+                android:layout_alignBottom="@+id/imageButtonSettings"
                 android:layout_marginLeft="6dp"
                 android:layout_marginTop="23dp"
-                android:layout_toRightOf="@+id/imageButton2"
+                android:layout_toRightOf="@+id/imageButtonSettings"
                 android:adjustViewBounds="true"
                 android:background="@drawable/notifications"
                 android:maxHeight="50dp"
@@ -72,7 +74,7 @@
                 android:src="@drawable/notifications" />
 
             <ImageButton
-                android:id="@+id/imageButton4"
+                android:id="@+id/imageButtonBack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/imageButtonNotifications"
@@ -89,7 +91,7 @@
                 android:id="@+id/imageView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/imageButton1"
+                android:layout_below="@+id/imageButtonHome"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="15dp"
                 android:adjustViewBounds="true"

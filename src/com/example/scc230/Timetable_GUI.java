@@ -65,12 +65,9 @@ public class Timetable_GUI extends Activity {
 				try{
 					startActivity(openNotifications); //memory error? not working
 					finish();
-				}catch(Exception e){
+				}catch(NullPointerException e){
 					System.out.println(e.getMessage());
-				}finally{
-					Toast.makeText(getApplicationContext(), 
-							"ERROR", Toast.LENGTH_SHORT).show();
-				} 
+				}
 				
 				//setContentView(R.layout.activity_timetable__gui);
 			}

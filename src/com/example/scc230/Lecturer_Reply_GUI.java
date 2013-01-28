@@ -10,11 +10,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
-
 public class Lecturer_Reply_GUI extends Activity {
-	
-	//Feedback_GUI fGUI = new Feedback_GUI;
 	
 	int applicationState = 6;
 	
@@ -39,10 +35,8 @@ public class Lecturer_Reply_GUI extends Activity {
 		settingsTab = (ImageButton) findViewById(R.id.imageButtonSettings);
 		notificationsTab = (ImageButton) findViewById(R.id.imageButtonNotifications);
 		backTab = (ImageButton) findViewById(R.id.imageButtonBack);
-		
 		postedComment = (TextView) findViewById(R.id.textViewComment);
 		submitReply = (Button) findViewById(R.id.buttonSubmitReply);
-		
 		postedComment.setText(Feedback_GUI.typeComment.getText());
 		
 		notificationsTab.setOnClickListener(new View.OnClickListener() {

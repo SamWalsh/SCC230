@@ -343,7 +343,18 @@
                 android:layout_alignBottom="@+id/imageView3"
                 android:layout_alignLeft="@+id/buttonSubmitRating"
                 android:layout_alignRight="@+id/buttonSubmitRating"
+                android:layout_marginBottom="5dp"
                 android:text="Edit" />
+
+            <Button
+                android:id="@+id/button1"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/TextViewComment2"
+                android:layout_below="@+id/TextViewComment2"
+                android:layout_marginTop="40dp"
+                android:text="Reply" />
 
         </RelativeLayout>
     </LinearLayout>
