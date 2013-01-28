@@ -37,7 +37,7 @@ public class Lecturer_Reply_GUI extends Activity {
 		backTab = (ImageButton) findViewById(R.id.imageButtonBack);
 		postedComment = (TextView) findViewById(R.id.textViewComment);
 		submitReply = (Button) findViewById(R.id.buttonSubmitReply);
-		postedComment.setText(Feedback_GUI.typeComment.getText());
+		postedComment.setText(Feedback_GUI.commentReplying);
 		
 		notificationsTab.setOnClickListener(new View.OnClickListener() {
 			
@@ -98,13 +98,7 @@ public class Lecturer_Reply_GUI extends Activity {
 			}
 		});
 		
-		backTab.setOnClickListener(new View.OnClickListener() {
-
-			@Override
-			public void onClick(View v) {
-				finish();
-			}
-		});
+		
 	}
 
 	@Override

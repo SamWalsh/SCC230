@@ -44,12 +44,12 @@ public final class R {
         public static final int TextViewThursday=0x7f070042;
         public static final int TextViewTuesday=0x7f07003e;
         public static final int TextViewWednesday=0x7f070040;
-        public static final int button1=0x7f07001c;
         public static final int buttonBack=0x7f070037;
         public static final int buttonDescriptionEdit=0x7f07001b;
         public static final int buttonForward=0x7f07003a;
         public static final int buttonLogIn=0x7f070023;
         public static final int buttonReply=0x7f070017;
+        public static final int buttonReply2=0x7f07001c;
         public static final int buttonSubmitComment=0x7f070011;
         public static final int buttonSubmitRating=0x7f070014;
         public static final int buttonSubmitReply=0x7f07001f;

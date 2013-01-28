@@ -20,15 +20,18 @@ public class Feedback_GUI extends Activity {
 	int applicationState = 3;
 	int count;
 	int onOff = 1;
+	int commentSwap = 1;
 	TextView displayRating;
 	TextView displayAverage;
 	TextView commentView1;
+	TextView commentView2;
 	RatingBar ratingBar;
 	Button submitRating;
 	float simulationData = 2;
 	ArrayList<Float> ratingList = new ArrayList<Float>();
-	
-	//ArrayList<EditText> commentList = new ArrayList<EditText>();
+
+	ArrayList<String> commentList = new ArrayList<String>();
+	int commentListSize;
 	float rating2;
 	String comment;
 	ImageButton homeTab;
@@ -36,6 +39,8 @@ public class Feedback_GUI extends Activity {
 	ImageButton notificationsTab;
 	ImageButton backTab;
 	Button commentReply;
+	Button commentReply2;
+	static String commentReplying;
 	Button submitComment;
 	Button editLecture;
 	static EditText typeComment;
@@ -52,12 +57,13 @@ public class Feedback_GUI extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_feedback__gui);
 		ratingList.add(simulationData);
-		
+
 		homeTab = (ImageButton) findViewById(R.id.imageButtonHome);
 		settingsTab = (ImageButton) findViewById(R.id.imageButtonSettings);
 		notificationsTab = (ImageButton) findViewById(R.id.imageButtonNotifications);
 		backTab = (ImageButton) findViewById(R.id.imageButtonBack);
 		commentReply = (Button) findViewById(R.id.buttonReply);
+		commentReply2 = (Button) findViewById(R.id.buttonReply2);
 		ratingBar = (RatingBar) findViewById(R.id.ratingBar);
 		displayRating = (TextView) findViewById(R.id.textView3);
 		submitRating = (Button) findViewById(R.id.buttonSubmitRating);
@@ -65,6 +71,7 @@ public class Feedback_GUI extends Activity {
 		submitComment = (Button) findViewById(R.id.buttonSubmitComment);
 		typeComment = (EditText) findViewById(R.id.editTextCommentInput);
 		commentView1 = (TextView) findViewById(R.id.TextViewComment1);
+		commentView2 = (TextView) findViewById(R.id.TextViewComment2);
 		editLecture = (Button) findViewById(R.id.buttonDescriptionEdit);
 		lectureDescription = (EditText) findViewById(R.id.editTextLectureDescription);
 		lectureDescription.setEnabled(false);
@@ -98,7 +105,7 @@ public class Feedback_GUI extends Activity {
 				//setContentView(R.layout.activity_timetable__gui);
 			}
 		});
-		
+
 		backTab.setOnClickListener(new View.OnClickListener() {
 
 			@Override
@@ -112,10 +119,29 @@ public class Feedback_GUI extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				startActivity(openLecturerReply);
+				commentListSize = commentList.size();
+				if(commentListSize != 0){
+					commentReplying = commentList.get(commentListSize - 1);
+					startActivity(openLecturerReply);
+				}
 				//setContentView(R.layout.activity_timetable__gui);
 			}
 		});
+
+		commentReply2.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				commentListSize = commentList.size();
+				if(commentListSize > 1){
+					commentReplying = commentList.get(commentListSize - 2);
+					startActivity(openLecturerReply);
+				}
+				//setContentView(R.layout.activity_timetable__gui);
+			}
+		});
+
 
 		ratingBar.setOnRatingBarChangeListener(new OnRatingBarChangeListener() {
 
@@ -156,9 +182,14 @@ public class Feedback_GUI extends Activity {
 			@Override
 			public void onClick(View v) {
 
+				commentListSize = commentList.size();
+				commentList.add(typeComment.getText().toString());
 
-				commentView1.setText(typeComment.getText()); 
-				
+				commentView1.setText(commentList.get(commentListSize)); 
+				if(commentListSize > 0){
+					commentView2.setText(commentList.get(commentListSize - 1));
+				}
+
 				//typeComment.getText());
 				//commentList.add(comment);
 				//System.out.print(comment);
@@ -181,8 +212,8 @@ public class Feedback_GUI extends Activity {
 				}else{
 					lectureDescription.setEnabled(false);
 				}
-				
-				
+
+
 				//System.out.print(commentList);
 				//postComment();
 				//submitRating.setEnabled(false);
