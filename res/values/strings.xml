@@ -13,5 +13,6 @@
     <string name="title_activity_timetable_test">TimetableTest</string>
     <string name="title_activity_timetable_test2">TimetableTest2</string>
     <string name="title_activity_settings__gui">Settings_GUI</string>
+    <string name="title_activity_settings_introduction__gui">Settings_Introduction_GUI</string>
 
 </resources>
