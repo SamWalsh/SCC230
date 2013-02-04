@@ -76,24 +76,21 @@
         android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageButtonHome"
-        android:layout_centerHorizontal="true"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="110dp"
         android:adjustViewBounds="true"
-        android:src="@drawable/settingsredandgreylong" />
+        android:src="@drawable/settingsredandgrey" />
 
-    <VideoView
-        android:id="@+id/videoView1"
+    <ImageButton
+        android:id="@+id/tweet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginBottom="90dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="115dp" />
+        android:layout_alignLeft="@+id/imageButtonSettings"
+        android:layout_below="@+id/imageButtonSettings"
+        android:layout_marginTop="82dp"
+        android:background="@drawable/twitter"
+        android:src="@drawable/twitter" />
 
     <TextView
         android:id="@+id/textView2"
@@ -104,7 +101,7 @@
         android:layout_marginLeft="5dp"
         android:maxLines="1"
         android:paddingLeft="3dp"
-        android:text="Application Introduction Video"
+        android:text="Click To Tweet Application"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/white"
         android:textSize="13sp" />

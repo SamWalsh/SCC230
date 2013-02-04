@@ -181,7 +181,7 @@
         android:textSize="13sp" />
 
     <Button
-        android:id="@+id/Button01"
+        android:id="@+id/share"
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:layout_alignParentLeft="true"
@@ -192,20 +192,6 @@
         android:background="@drawable/thinwhitebox"
         android:marqueeRepeatLimit="marquee_forever"
         android:text="Share Application"
-        android:textSize="13sp" />
-
-    <Button
-        android:id="@+id/Button02"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/Button01"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/thinwhitebox"
-        android:marqueeRepeatLimit="marquee_forever"
-        android:text="Send Feedback"
         android:textSize="13sp" />
 
     <Button
@@ -248,6 +234,18 @@
         android:background="@drawable/thinwhitebox"
         android:marqueeRepeatLimit="marquee_forever"
         android:text="Log Out"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/Button02"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/imageView5"
+        android:layout_alignTop="@+id/imageView5"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/thinwhitebox"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:text="Send Feedback"
         android:textSize="13sp" />
 
 </RelativeLayout>

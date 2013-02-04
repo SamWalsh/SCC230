@@ -1,57 +1,48 @@
 package com.example.scc230;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.MediaController;
+import android.widget.VideoView;
 
-public class Settings_GUI extends Activity {
+public class Settings_Sharing_GUI extends Activity {
 
 	ImageButton homeTab;
 	ImageButton settingsTab;
 	ImageButton notificationsTab;
 	ImageButton backTab;
-	Button appIntro;
-	Button share;
+	ImageButton tweet;
 	
 	Intent openLecturerReply = new Intent("android.intent.action.LECTURERREPLY");
 	Intent openTimetable = new Intent("android.intent.action.TIMETABLE");
 	Intent openSettings = new Intent("android.intent.action.SETTINGS");
 	Intent openNotifications = new Intent("android.intent.action.NOTIFICATIONS");
-	Intent openSettingsIntroduction = new Intent("android.intent.action.SETTINGSINTRODUCTION");
-	Intent openSettingsSharing = new Intent("android.intent.action.SETTINGSSHARING");
+	Intent openTwitter = new Intent("android.intent.action.TWITTER");
+	String tweetUrl = "https://twitter.com/intent/tweet?text= test test test &url= " + "https://www.google.com";
+	//String facebookUrl = "https://facebook.com/intent/tweet?text= test test test &url= " + "https://www.google.com";
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_settings__gui);
+		setContentView(R.layout.activity_settings_sharing__gui);
 		
 		homeTab = (ImageButton) findViewById(R.id.imageButtonHome);
 		settingsTab = (ImageButton) findViewById(R.id.imageButtonSettings);
 		notificationsTab = (ImageButton) findViewById(R.id.imageButtonNotifications);
 		backTab = (ImageButton) findViewById(R.id.imageButtonBack);
-		appIntro = (Button) findViewById(R.id.appIntro);
-		share = (Button) findViewById(R.id.share);
+		tweet = (ImageButton) findViewById(R.id.tweet);
 		
-		share.setOnClickListener(new View.OnClickListener() {
-			
+		tweet.setOnClickListener(new View.OnClickListener() {
+
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				startActivity(openSettingsSharing);
-				//setContentView(R.layout.activity_timetable__gui);
-			}
-		});
-		
-		appIntro.setOnClickListener(new View.OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				startActivity(openSettingsIntroduction);
+				share();
 				//setContentView(R.layout.activity_timetable__gui);
 			}
 		});
@@ -95,11 +86,16 @@ public class Settings_GUI extends Activity {
 		});
 
 	}
+	
+	private void share() {
+		Uri uri = Uri.parse(tweetUrl);
+		startActivity(new Intent(Intent.ACTION_VIEW, uri));
+	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.activity_settings__gui, menu);
+		getMenuInflater().inflate(R.menu.activity_settings_sharing__gui, menu);
 		return true;
 	}
 
