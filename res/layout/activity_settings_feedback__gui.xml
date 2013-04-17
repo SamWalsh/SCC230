@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings_Feedback_GUI" >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitStart"
+        android:src="@drawable/topbar" />
+
+    <ImageButton
+        android:id="@+id/imageButtonHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="43dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/home"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/home" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageButtonHome"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="43dp"
+        android:layout_toRightOf="@+id/imageButtonHome"
+        android:adjustViewBounds="true"
+        android:background="@drawable/spanner"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/spanner" />
+
+    <ImageButton
+        android:id="@+id/imageButtonNotifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageButtonSettings"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@+id/imageButtonSettings"
+        android:adjustViewBounds="true"
+        android:background="@drawable/notifications"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/notifications" />
+
+    <ImageButton
+        android:id="@+id/imageButtonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButtonNotifications"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@+id/imageButtonNotifications"
+        android:adjustViewBounds="true"
+        android:background="@drawable/back"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButtonHome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:adjustViewBounds="true"
+        android:maxWidth="305dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/redandgrey" />
+
+    <EditText
+        android:id="@+id/editTextLectureDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_alignRight="@+id/imageView3"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="text"
+        android:maxLines="4"
+        android:padding="5dp"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/buttonSubmitComment"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignRight="@+id/imageView3"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextLectureDescription"
+        android:layout_alignTop="@+id/imageView3"
+        android:maxLines="1"
+        android:paddingLeft="3dp"
+        android:text="Send Feedback To Admin"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:textSize="13sp" />
+
+</RelativeLayout>

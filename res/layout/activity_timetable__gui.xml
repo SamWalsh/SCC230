@@ -321,7 +321,6 @@
                 android:textColor="@android:color/white"
                 android:textColorHint="@android:color/white"
                 android:textSize="13sp" />
-
         </RelativeLayout>
     </LinearLayout>
 

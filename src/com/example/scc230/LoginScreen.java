@@ -3,7 +3,6 @@ package com.example.scc230;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
-import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.View;
@@ -11,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
+import com.example.scc230.R;
 
 public class LoginScreen extends Activity {
 
@@ -98,7 +98,6 @@ public class LoginScreen extends Activity {
 		});
 
 	}
-
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {

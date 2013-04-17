@@ -6,8 +6,9 @@
     <string name="menu_settings">Settings</string>
     <string name="top_title">nothing</string>
     <string name="home">nothing</string>
-    <string name="title_activity_timetable__gui">Timetable_GUI</string>
     <string name="title_activity_login_screen">LoginScreen</string>
+    <string name="title_activity_feedback__gui">Feedback_GUI</string>
+    <string name="title_activity_timetable__gui">Timetable_GUI</string>
     <string name="title_activity_lecturer__reply__gui">Lecturer_Reply_GUI</string>
     <string name="title_activity_notifications__gui">Notifications_GUI</string>
     <string name="title_activity_timetable_test">TimetableTest</string>
@@ -15,5 +16,10 @@
     <string name="title_activity_settings__gui">Settings_GUI</string>
     <string name="title_activity_settings_introduction__gui">Settings_Introduction_GUI</string>
     <string name="title_activity_settings_sharing__gui">Settings_Sharing_GUI</string>
+    <string name="title_activity_settings_feedback__gui">Settings_Feedback_GUI</string>
+    <string name="title_activity_settings_termsofuse__gui">Settings_Termsofuse_GUI</string>
+    <string name="title_activity_settings_about__gui">Settings_About_GUI</string>
+    <string name="title_activity_statistics__gui">Settings_About_GUI</string>
+    <string name="title_activity_stats_graph__gui">Settings_About_GUI</string>
 
 </resources>

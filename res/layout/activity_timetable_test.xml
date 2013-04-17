@@ -177,7 +177,7 @@
                         android:textStyle="bold"
                         android:typeface="serif" />
                 </TableRow>
-                
+
                 <TableRow
                     android:id="@+id/tableRowThursday"
                     android:layout_width="match_parent"
@@ -192,7 +192,7 @@
                         android:textStyle="bold"
                         android:typeface="serif" />
                 </TableRow>
-                
+
                 <TableRow
                     android:id="@+id/tableRowFriday"
                     android:layout_width="match_parent"
@@ -207,7 +207,7 @@
                         android:textStyle="bold"
                         android:typeface="serif" />
                 </TableRow>
-                
+
                 <TableRow
                     android:id="@+id/tableRowSaturday"
                     android:layout_width="match_parent"
@@ -222,7 +222,7 @@
                         android:textStyle="bold"
                         android:typeface="serif" />
                 </TableRow>
-                
+
                 <TableRow
                     android:id="@+id/tableRowSunday"
                     android:layout_width="match_parent"
@@ -256,7 +256,6 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="4dip"
                         android:layout_weight="1"
-                        
                         android:padding="10dip"
                         android:text="Column 1" />
 
@@ -266,7 +265,6 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="4dip"
                         android:layout_weight="1"
-                       
                         android:padding="10dip"
                         android:text="Column 2" />
 
@@ -276,12 +274,10 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="4dip"
                         android:layout_weight="1"
-                       
                         android:padding="10dip"
                         android:text="Column 3" />
                 </TableRow>
             </TableLayout>
-
         </RelativeLayout>
     </LinearLayout>
 

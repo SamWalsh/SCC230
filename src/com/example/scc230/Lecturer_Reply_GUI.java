@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.example.scc230.R;
 
 public class Lecturer_Reply_GUI extends Activity {
 	

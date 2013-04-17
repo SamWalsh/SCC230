@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginScreen" >
+    tools:context=".Settings_GUI" >
 
     <ImageView
         android:id="@+id/imageView2"
@@ -71,6 +71,18 @@
         android:maxWidth="50dp"
         android:scaleType="fitCenter"
         android:src="@drawable/back" />
+
+    <!--
+          <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="110dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/settingsredandgrey" />
+    -->
 
     <ImageView
         android:id="@+id/imageView1"
@@ -195,21 +207,7 @@
         android:textSize="13sp" />
 
     <Button
-        android:id="@+id/Button03"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/Button02"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/thinwhitebox"
-        android:marqueeRepeatLimit="marquee_forever"
-        android:text="View Terms of Use"
-        android:textSize="13sp" />
-
-    <Button
-        android:id="@+id/Button04"
+        android:id="@+id/about"
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:layout_alignParentLeft="true"
@@ -223,7 +221,7 @@
         android:textSize="13sp" />
 
     <Button
-        android:id="@+id/Button05"
+        android:id="@+id/logout"
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:layout_alignParentLeft="true"
@@ -237,7 +235,7 @@
         android:textSize="13sp" />
 
     <Button
-        android:id="@+id/Button02"
+        android:id="@+id/feedback"
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:layout_alignLeft="@+id/imageView5"
@@ -246,6 +244,19 @@
         android:background="@drawable/thinwhitebox"
         android:marqueeRepeatLimit="marquee_forever"
         android:text="Send Feedback"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/termsofuse"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/thinwhitebox"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:text="View Terms of Use"
         android:textSize="13sp" />
 
 </RelativeLayout>

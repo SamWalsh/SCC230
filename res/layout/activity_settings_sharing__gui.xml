@@ -2,8 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginScreen" >
-    
+    tools:context=".Settings_Sharing_GUI" >
+
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
@@ -78,19 +78,9 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="80dp"
         android:adjustViewBounds="true"
-        android:src="@drawable/settingsredandgrey" />
-
-    <ImageButton
-        android:id="@+id/tweet"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/imageButtonSettings"
-        android:layout_below="@+id/imageButtonSettings"
-        android:layout_marginTop="82dp"
-        android:background="@drawable/twitter"
-        android:src="@drawable/twitter" />
+        android:src="@drawable/redandgreyshort" />
 
     <TextView
         android:id="@+id/textView2"
@@ -101,9 +91,29 @@
         android:layout_marginLeft="5dp"
         android:maxLines="1"
         android:paddingLeft="3dp"
-        android:text="Click To Tweet Application"
+        android:text="Share Application"
         android:textColor="@android:color/white"
         android:textColorHint="@android:color/white"
         android:textSize="13sp" />
+
+    <ImageButton
+        android:id="@+id/facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/facebook"
+        android:src="@drawable/facebook" />
+
+    <ImageButton
+        android:id="@+id/tweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageButtonBack"
+        android:layout_alignTop="@+id/facebook"
+        android:background="@drawable/twitter1"
+        android:src="@drawable/twitter1" />
 
 </RelativeLayout>

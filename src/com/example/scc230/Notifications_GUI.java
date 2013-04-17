@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
 import android.widget.ImageButton;
+import com.example.scc230.R;
 
 public class Notifications_GUI extends Activity {
 

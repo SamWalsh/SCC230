@@ -5,9 +5,9 @@ import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
+import com.example.scc230.R;
 
 public class Timetable_GUI extends Activity {
 

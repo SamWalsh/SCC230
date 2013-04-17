@@ -1,0 +1,102 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Settings_Termsofuse_GUI" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitStart"
+                android:src="@drawable/topbar" />
+
+            <ImageButton
+                android:id="@+id/imageButtonHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="43dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/home"
+                android:maxHeight="50dp"
+                android:maxWidth="50dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/home" />
+
+            <ImageButton
+                android:id="@+id/imageButtonSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageButtonHome"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="43dp"
+                android:layout_toRightOf="@+id/imageButtonHome"
+                android:adjustViewBounds="true"
+                android:background="@drawable/spanner"
+                android:maxHeight="50dp"
+                android:maxWidth="50dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/spanner" />
+
+            <ImageButton
+                android:id="@+id/imageButtonNotifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageButtonSettings"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="23dp"
+                android:layout_toRightOf="@+id/imageButtonSettings"
+                android:adjustViewBounds="true"
+                android:background="@drawable/notifications"
+                android:maxHeight="50dp"
+                android:maxWidth="50dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/notifications" />
+
+            <ImageButton
+                android:id="@+id/imageButtonBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageButtonNotifications"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@+id/imageButtonNotifications"
+                android:adjustViewBounds="true"
+                android:background="@drawable/back"
+                android:maxHeight="50dp"
+                android:maxWidth="50dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageButtonNotifications"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Welcome to our Applicaton. If you continue to use this applicaton you are agreeing to comply with and be bound to the followiing terms and conditions of use.  The term &apos;COMPANYS. or &apos;us&apos; or &apos;we&apos; refers to the owner of the website whose office is InfoLab 21 Lancaster University. The term &apos;you&apos; refers to the user or viewer of our appplication. The use of this application is subject to the following terms of use:                    -the content of the pages of this appliation is for your general information and use only. It is subject to change without notice                                -Neither we nor any third parties provide any warranty or guarantee as to the accuracy, timeliness, performance, completeness or suitability of the information and materials found or offered on this website for any particular purpose. you acknowledge that such information and materials may contain inaccuracies or errors and we expressly exclude liability for any such inaccuracies or errors to the fullest extent permitted by law.                        -Your use of any information or materials on this application is entirely at your own risk, for which we shall not be liable. It shall be your own responsibility to ensure that any products, services or informaitons available through this application meet your specfic requirements.       -This website contains material which is owned by us. This material includes, but is not limited to, the design, layout,look apperance and graphics. Reproduction is prohibited other than in accordance with the copyright notice, which forms part of these terms and conditions.            -Unauthoriseduse of this application may give rise to a claim for damages and/or be a criminal offence.                                                                           -Your use of this application and any dispute arising out of such use of the application is subject to the laws of the United Kingdom" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

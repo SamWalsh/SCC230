@@ -86,17 +86,6 @@
                 android:scaleType="fitStart"
                 android:src="@drawable/thingreybox" />
 
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/imageView2"
-                android:layout_centerHorizontal="true"
-                android:layout_marginLeft="1dp"
-                android:layout_marginTop="6dp"
-                android:text="Lecture Feedback"
-                android:textSize="13sp" />
-
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="wrap_content"
@@ -131,8 +120,8 @@
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/textView1"
                 android:layout_alignTop="@+id/imageView3"
+                android:layout_centerHorizontal="true"
                 android:layout_marginLeft="10dp"
                 android:maxLines="1"
                 android:paddingLeft="3dp"
@@ -355,7 +344,6 @@
                 android:layout_below="@+id/TextViewComment2"
                 android:layout_marginTop="40dp"
                 android:text="Reply" />
-
         </RelativeLayout>
     </LinearLayout>
 

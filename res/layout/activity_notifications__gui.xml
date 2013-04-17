@@ -7,13 +7,13 @@
     android:scrollbars="vertical"
     tools:context=".Notifications_GUI" >
 
-    <LinearLayout 
+    <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="top" >
 
-        <RelativeLayout 
+        <RelativeLayout
             xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="wrap_content"
             android:layout_height="551dp"
@@ -212,7 +212,6 @@
                 android:id="@+id/imageView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                
                 android:layout_alignTop="@+id/TextView03"
                 android:layout_centerHorizontal="true"
                 android:adjustViewBounds="true"
@@ -267,9 +266,7 @@
                 android:layout_alignTop="@+id/imageView7"
                 android:text="Lecture comment, date, time"
                 android:textAppearance="?android:attr/textAppearanceSmall" />
-
         </RelativeLayout>
-
     </LinearLayout>
 
 </ScrollView>

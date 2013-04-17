@@ -152,7 +152,6 @@
         android:textColorHint="@android:color/white"
         android:textSize="13sp" />
 
-
     <Button
         android:id="@+id/buttonLogIn"
         android:layout_width="wrap_content"
